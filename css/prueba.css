@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@200;300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-image: url(../img/fondo1.png);
+    background-size: cover;
+
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6,fr);
+    grid-auto-rows: minmax(200px, auto) ;
+    background-color: aqua;
+}   
+
+
+div {
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+    gap: 3px;
+}
+
+
+
+.logo{
+    justify-self: start;
+    background-color: black;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+.logo img{
+    width: 200px;
+    cursor: pointer;
+}
+
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    border: 2px solid saddlebrown;
+}
+
+.menu > div{
+   background-color: aquamarine;
+   
+
+
+.menu a{
+
+    text-decoration: none;
+    font-size:larger;
+}
+
+
+
+.info{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start:2;
+    grid-row-end: 6;
+    background-color: black;
+}
+
+
+.img {
+
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: black;
+    justify-content: start;
+}
+
+
+
+.img2{
+    grid-column-start: 5;
+    background-color: black;
+    
+}
+
+
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
