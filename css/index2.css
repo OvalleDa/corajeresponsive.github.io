@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@200;300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nunito:wght@300&family=Palette+Mosaic&family=Poppins:wght@200;300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+background-image: url(../img/ahhh\ 1.png);
+    background-size: cover;
+
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows: minmax(200px, auto);
+    gap: 1rem;
+    background-color: blueviolet;
+}
+
+.container > div{
+    background-color: crimson;
+}
+
+.container > div:hover{
+    background-color: azure;
+    border: 1px solid violet;
+}
+
+.navbar{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+
+.navbar img{
+    width: 200px;
+    cursor: pointer;
+}
+
+
+.navbar img:hover{
+    filter: blur(2px);
+}
+
+.menu{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.info{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.footer{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}

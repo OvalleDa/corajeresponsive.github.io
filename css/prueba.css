@@ -61,7 +61,8 @@ div {
 .menu > div{
     align-self: center;
     background-color: rgb(255, 205, 254);
-    border-radius: 100px;
+    border-radius: 0px;
+    padding: 2px;
 }
 
 
