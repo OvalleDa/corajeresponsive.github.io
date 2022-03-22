@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@200;300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nunito:wght@300&family=Palette+Mosaic&family=Poppins:wght@200;300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/ahhh\ 1.png);
+    background-size: cover;
+}
+
+/* HEADER */
+
+.title h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+}
+
+/* CONTAINER */
+
+.container {
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: repeat(4, 1fr) 3%; */
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container>.header, .container>.content, .container>.sidebar, .container>.footer, .container>div {
+
+    padding: 20px;
+}
+
+.container .footer{
+    background-color: rgba(24, 11, 67, 0.767);
+    grid-column: 2/6;
+
+}
+
+.container .content{
+    grid-column: 2/6;
+    grid-row: 1/4;
+    background-color:rgba(230, 162, 174, 0.37) ;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.container .header{
+    grid-row: 1/5;
+    background-color: rgba(24, 11, 67, 0.767);
+    font-weight: 500;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+
+.container .header img:hover{
+    cursor: pointer;
+    filter: blur(2px);
+}
+
+
+
+.header .sidebar{
+    display: grid;
+    text-align: center;
+    grid-row: 2/5;
+
+}
+
+.sidebar a{
+    font-size:larger;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.header ul{
+    list-style: none;
+    background-color: rgba(154, 205, 102, 0.637);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+.sidebar .historia:hover{
+    background-image: url(../img/coraje.png);
+    background-repeat: no-repeat;
+}
+
+
+.sidebar .personajes:hover{
+    background-image: url(../img/muriel2.png);
+    background-repeat: no-repeat;
+}
+
+.sidebar .villanos:hover{
+    background-image: url(../img/dotot\ 1.png);
+    background-repeat: no-repeat;
+}
+
+.sidebar .galeria:hover{
+    background-image: url(../img/murielyjusto1.png);
+    background-repeat: no-repeat;
+}
+
+
+
+.related-post{
+    border-radius: 100px;
+    text-align: center;
+}
+
+.related-post h1{
+    text-align: center;
+}
+
+.related-post img:hover{
+    cursor: pointer;
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
