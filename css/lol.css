@@ -89,8 +89,24 @@ body {
 }
 
 
-.header ul:hover{
+.sidebar .historia:hover{
     background-image: url(../img/coraje.png);
+    background-repeat: no-repeat;
+}
+
+
+.sidebar .personajes:hover{
+    background-image: url(../img/muriel2.png);
+    background-repeat: no-repeat;
+}
+
+.sidebar .villanos:hover{
+    background-image: url(../img/dotot\ 1.png);
+    background-repeat: no-repeat;
+}
+
+.sidebar .galeria:hover{
+    background-image: url(../img/murielyjusto1.png);
     background-repeat: no-repeat;
 }
 
